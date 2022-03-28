@@ -1,0 +1,48 @@
+<div style="margin-top: 40px;margin-left: 30px;">
+  <div class="col-md-6 text-center click" [ngClass]="switch==false ? 'bg':'null' " *ngIf="!switch">
+    <h1>Welcome Back!</h1>
+    <p>To keep connected with us please login with your personal info</p>
+    <button (click)="switchBtn()" type="button" class="btn-out">SIGN IN</button>
+  </div>
+
+  <div class="col-md-6 text-center click" [ngClass]="switch==true ? 'bg-alt':'null' " *ngIf="switch" >
+    <h1>Login to Your Account</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <input type="text" formControlName="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="password" formControlName="password" class="form-control" placeholder="Password">
+        </div>
+        <p class="text-danger">{{errorMsg}}</p>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+  </div>
+
+  <div class="col-md-6 text-center click" [ngClass]="switch==false ? 'bg-alt':'null' " *ngIf="!switch">
+      
+    <h1 class="head">Create Account</h1>
+    <form>
+        <div class="form-group">
+          <input type="name" class="form-control" aria-describedby="emailHelp" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+  </div>
+
+  <div class="col-md-6 text-center click" [ngClass]="switch==true ? 'bg':'null' "  *ngIf="switch">
+    <h1>New Here?</h1>
+    <p>Sign up and discover a great amount of new oppurtunities!</p>
+    <button (click)="switchBtn()" type="button"  class="btn-out">SIGN UP</button>
+  </div>
+</div>
+  
+
+
+

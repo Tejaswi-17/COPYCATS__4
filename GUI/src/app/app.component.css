@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.cardd{
+    padding: 50px;
+}
+.bgh{
+    background-image: radial-gradient(to right,#f0f4f3, #3db397, #f0f4f3);
+    min-height: 100vh;
+    min-width: 100vw;
+}

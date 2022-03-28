@@ -1,0 +1,9 @@
+<nav class="nav-bg" style="display: flex;flex-direction: row;justify-content: space-between;min-width: 100vw;">
+    <h1>Logo</h1>
+    <div style="display: flex;justify-content: space-between;align-items: center;min-width: 30vw;">
+        <p routerLink="/">Home</p>
+        <p routerLink="/products" (click)="c()">Products</p>
+        <p routerLink="/inventory">Inventory</p>
+        <p (click)="logout()">Logout</p>
+    </div>
+</nav>

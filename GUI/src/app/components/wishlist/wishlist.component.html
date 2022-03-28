@@ -1,0 +1,29 @@
+<div>
+    <app-header></app-header>
+    <div class="text-center">
+        <h1>Inventory</h1>
+        <div *ngIf="wishlist.length!==0" style="display: flex;flex-wrap: warp;">
+            <ul  *ngFor="let i of wishlist">
+                <li style="padding: 30px;" >
+                    <div  class="card text-center" style="width: 200px;box-shadow: 1px 1px 1.5px 1.5px #3db397 inset;border-radius: 15px;padding: 10px;">
+                        <img class="card-img-top" src={{i.image}} alt="Card image cap" style="width: 180px;height: 140px;border-radius: 20px;">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.name}}</h5>
+                          <p class="card-text">&#8377; {{i.cost_price}}</p>
+                          <div style="display: flex;justify-content: space-between;align-items: center;">
+                            <fa-icon [icon]="heart" class="fa-xl" style="padding-left: 20px; color: rgb(168, 18, 18);"></fa-icon>
+                            
+                            <button class="btn btn-p">Buy Now</button>
+                          </div>
+                          
+                        </div>
+                    </div>
+                
+                </li>
+            </ul>
+        </div>
+        <div *ngIf="wishlist.length===0">
+            <p>Empty wishlist</p>
+        </div>
+    </div>
+</div>
