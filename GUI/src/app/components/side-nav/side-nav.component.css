@@ -1,0 +1,8 @@
+.filters-group-container {
+    width: 25%;
+    max-width: 280px;
+    min-width: 240px;
+    margin-top: 48px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}

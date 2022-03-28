@@ -1,0 +1,35 @@
+.click{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.bgg{
+    background-color: white;
+}
+
+.bg{
+    background-color: #3db397;
+    color: white;
+}
+.bg-alt{
+    background-color:white;
+    color: #3db397;
+}
+.btn-out{
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 10vw;
+    margin-top: 10px;
+}
+.btn{
+    background-color: #3db09b;
+}
+
+.head{
+    color: #3db09b;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
